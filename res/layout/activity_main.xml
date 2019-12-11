@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/login_register"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:hint="手机号"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/log_in_phone_number"
+        />
+    <EditText
+        android:hint="登录密码"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/log_in_login_password"
+        />
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/log_in_Remember_password"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="记住密码"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:textSize="20dp"
+            android:text="快速注册"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/log_in_registered"
+            />
+
+    </LinearLayout>
+    <Button
+        android:textColor="#E44F4F"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:id="@+id/log_in_button"
+        />
+
+
+
+</LinearLayout>
